@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="theme-light.css" id="theme-link" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+		<title>Frontend Mentor | Social Media Dashboard with Theme Switcher</title>
+	</head>
+	<body>
+		<header class="wrapper">
+			<div>
+				<h1 class="fs-500 fw-700">Social Media Dashboard</h1>
+				<p class="fw-700 text-02">Total Followers: 23,004</p>
+			</div>
+			<hr />
+			<div class="toggle-container">
+				<p class="fw-700 text-02">Dark Mode</p>
+				<button
+					class="theme-btn light"
+					title="Light mode"
+					onclick="setTheme('light')"
+				>
+					Light
+				</button>
+				<button
+					class="theme-btn dark"
+					title="Dark mode"
+					onclick="setTheme('dark')"
+				>
+					Dark
+				</button>
+			</div>
+		</header>
+
+		<main class="wrapper">
+			<div class="card profile-card">
+				<p>
+					<span> <img src="" alt="" /></span> @nathanf
+				</p>
+				<p>1987</p>
+				<p>Followers</p>
+				<p>
+					<span>
+						<!-- icon -->
+					</span>
+					12 Today
+				</p>
+			</div>
+			<h2 class="fs-500 fw-700 text-02">Overview - Today</h2>
+			<div class="card stats-card">
+				<div class="flex align-center justify-between">
+					<p class="fw-700 text-02">Page Views</p>
+					<img src="./images/icon-facebook.svg" alt="" />
+				</div>
+				<div class="flex align-end justify-between">
+					<p class="fs-700 fw-700">87</p>
+					<p class="fs-300 text-lime-green">
+						<span>
+							<!-- icon -->
+						</span>
+						3%
+					</p>
+				</div>
+			</div>
+			<!-- @nathanf 1987 Followers 12 Today @nathanf 1044 Followers 99 Today
+			@realnathanf 11k Followers 1099 Today Nathan F. 8239 Subscribers 144 Today
+			Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile Views 52k 1375%
+			Retweets 117 303% Likes 507 553% Likes 107 19% Total Views 1407 12% -->
+		</main>
+
+		<!-- <footer class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by Katrien S..
+		</footer> -->
+	</body>
+</html>
