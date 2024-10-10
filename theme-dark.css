@@ -9,5 +9,6 @@
 	--clr-text-02: 228, 34%, 66%;
 	--clr-text-01: 0 0% 100%;
 
-	--clr-toggle: linear gradient 210, 78%, 56% to 146, 68%, 55%;
+  --clr-toggle-bg-01: 146, 68%, 55%;
+  --clr-toggle-bg-02: 210, 78%, 56%;
 }
