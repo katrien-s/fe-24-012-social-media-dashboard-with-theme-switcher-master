@@ -17,35 +17,21 @@
 		<title>Frontend Mentor | Social Media Dashboard with Theme Switcher</title>
 	</head>
 	<body>
-		<header class="wrapper bg-top">
-			<div>
-				<h1 class="fs-500 fw-700">Social Media Dashboard</h1>
-				<p class="fw-700 text-02">Total Followers: 23,004</p>
-			</div>
-
-			<div class="toggle-container">
-				<p class="fw-700 text-02">Dark Mode</p>
-				<label class="switch">
-					<input type="checkbox" id="theme-toggle" onclick="toggleTheme()" />
-					<span class="slider round"></span>
-				</label>
-
-				<!-- <button
-					class="theme-btn light"
-					title="Light mode"
-					onclick="setTheme('light')"
-				>
-					Light
-				</button>
-				<button
-					class="theme-btn dark"
-					title="Dark mode"
-					onclick="setTheme('dark')"
-				>
-					Dark
-				</button> -->
-			</div>
-		</header>
+		<div class="bg-top">
+      <header class="wrapper">
+        <div>
+          <h1 class="fs-500 fw-700">Social Media Dashboard</h1>
+          <p class="fw-700 text-02">Total Followers: 23,004</p>
+        </div>
+        <div class="toggle-container">
+          <p class="fw-700 text-02">Dark Mode</p>
+          <label class="switch">
+            <input type="checkbox" id="theme-toggle" onclick="toggleTheme()" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </header>
+    </div>
 
 		<main class="wrapper">
 			<div class="cards-container">
