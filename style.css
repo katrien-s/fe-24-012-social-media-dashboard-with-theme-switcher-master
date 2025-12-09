@@ -143,10 +143,14 @@ select {
 	--flow-space: 0.75rem;
 }
 
+.custom-gap {
+	--gap: 5px;
+}
+
 .wrapper {
 	margin-inline: auto;
 	width: min(calc(100% - 2em), 69rem);
-  transition: all 1s ease;
+	transition: all 1s ease;
 }
 
 .sr-only {
@@ -186,10 +190,6 @@ select {
 
 /* Colors */
 
-.bg-top {
-	background-color: hsl(var(--clr-top-bg));
-}
-
 .text-01 {
 	color: hsl(var(--clr-text-01));
 }
@@ -226,9 +226,6 @@ select {
 .fs-900 {
 	font-size: var(--fs-900);
 }
-.fs-800 {
-	font-size: var(--fs-800);
-}
 .fs-700 {
 	font-size: var(--fs-700);
 }
@@ -243,9 +240,6 @@ select {
 }
 .fs-300 {
 	font-size: var(--fs-300);
-}
-.fs-200 {
-	font-size: var(--fs-200);
 }
 
 .fw-700 {
@@ -273,6 +267,7 @@ header {
 
 .bg-top {
 	position: relative;
+	background-color: hsl(var(--clr-top-bg));
 }
 
 .bg-top::after {
@@ -336,6 +331,18 @@ header {
 	text-align: center;
 	align-items: center;
 	position: relative;
+}
+
+.profile-card dl {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.profile-card dd {
+	margin-inline: auto;
 }
 
 .profile-card:nth-of-type(1) {
