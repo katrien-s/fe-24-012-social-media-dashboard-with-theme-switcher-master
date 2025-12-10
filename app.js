@@ -1,7 +1,11 @@
-const checkbox = document.getElementById('theme-toggle');
+const toggle = document.getElementById('theme-toggle');
+
+toggle.addEventListener('change', () => {
+	toggleTheme();
+});
 
 function toggleTheme() {
-	checkbox.checked ? setTheme('dark') : setTheme('light');
+	toggle.checked ? setTheme('dark') : setTheme('light');
 }
 
 function setTheme(themeName) {
@@ -11,7 +15,6 @@ function setTheme(themeName) {
 }
 
 // Setting theme preference in localStorage
-
 function savingThemePreference(themeName) {
 	localStorage.setItem('theme', themeName);
 }

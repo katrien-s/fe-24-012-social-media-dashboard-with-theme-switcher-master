@@ -136,7 +136,7 @@ select {
 }
 
 .flow > *:where(:not(:first-child)) {
-	margin-top: var(--flow-space, 1rem);
+	margin-block-start: var(--flow-space, 1rem);
 }
 
 .flow--space-small {
@@ -182,10 +182,6 @@ select {
 
 .skip-to-content:focus {
 	transform: translateY(0);
-}
-
-.mb-2 {
-	margin-bottom: 0.5rem;
 }
 
 /* Colors */
@@ -324,7 +320,7 @@ header {
 	padding-block: 2rem 1.5rem;
 	display: flex;
 	flex-direction: column;
-	gap: 28px;
+	gap: 1.75rem;
 }
 
 .profile-card {
@@ -335,7 +331,7 @@ header {
 
 .profile-card dl {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	align-items: center;
 	justify-content: center;
 	gap: 0.5rem;
