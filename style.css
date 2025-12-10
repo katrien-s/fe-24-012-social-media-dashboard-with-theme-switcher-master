@@ -258,7 +258,7 @@ select {
 /* ----------------  */
 
 header {
-	padding-top: 36px;
+	padding-block-start: 2.25rem;
 }
 
 .bg-top {
@@ -283,7 +283,7 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	border-top: 1px solid hsl(var(--clr-text-01));
-	padding-top: 1rem;
+	padding-block-start: 1rem;
 	margin-top: 1.5rem;
 }
 
@@ -301,7 +301,7 @@ header {
 
 	.toggle-container {
 		margin-top: unset;
-		padding-top: unset;
+		padding-block-start: unset;
 		border: unset;
 		gap: 1rem;
 	}
@@ -447,7 +447,9 @@ input:checked + .slider::before {
 .attribution {
 	font-size: 11px;
 	text-align: center;
+	margin-block-end: 1.5rem;
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
+	text-decoration: underline;
 }
